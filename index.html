@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>weather App</title>
+</head>
+
+<body>
+  <!-- ============================= Start Navbar =============================-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container p-4">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/download.png" alt="logo" />
+        <div class="text">
+          <h5>Weather</h5>
+          <p>tagline goes here</p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-3">
+          <li class="nav-item px-3 py-sm-2">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ============================= End Navbar =============================-->
+
+  <!-- ============================= Start Search =============================-->
+  <section class="search">
+    <div class="container p-lg-5 p-2">
+      <div class="search-box py-2">
+        <input type="search" name="search" id="search" class="form-control py-3" placeholder="Find your location..." />
+        <button class="btn btn-primary col-2 text-center position-absolute">
+          find
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- ============================= End Search =============================-->
+
+  <!-- ============================= Start weather Box =============================-->
+  <section class="weather-box py-4">
+    <div class="container">
+      <div class="row g-0 gy-3" id="myRow">
+      </div>
+    </div>
+  </section>
+  <!-- ============================= End weather Box =============================-->
+
+  <!-- ============================= Start Footer =============================-->
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-12">
+          <div class="search-box py-2 position-relative" id="searchBox">
+            <input type="search" name="search" id="search" class="form-control" placeholder="Enter your email " />
+            <button
+              class="btn btn-primary col-4 text-center position-absolute top-50 end-0 translate-middle-y rounded-0 fs-6">
+              Subscribe
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="icon-box d-flex align-items-center justify-content-evenly py-3 justify-content-md-center">
+            <a class="icon" href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a class="icon" href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="icon" href="#">
+              <i class="fa-brands fa-google-plus"></i>
+            </a>
+            <a class="icon" href="#">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ============================= End Footer =============================-->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+/* ================================= Start  Global Rules ================================= */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* ================================= End  Global Rules ================================= */
+
+/* ================================= Start Navbar ================================= */
+.navbar {
+  z-index: 33333;
+  background-color: #1e202b;
+}
+
+.navbar .navbar-brand {
+  color: white;
+  display: flex;
+  align-items: stretch;
+}
+.navbar .navbar-brand .text {
+  padding: 0rem 0.8rem;
+}
+.navbar .navbar-brand h5 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.navbar .navbar-brand p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.navbar .nav-link {
+  color: white;
+  font-weight: 600;
+  transition: all 0.5s linear;
+  padding: 0.3rem 2rem;
+  border-radius: 15px;
+  border: 2px solid transparent;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #009ad8;
+  border: 2px solid #009ad8;
+}
+
+.navbar-toggler i {
+  color: white;
+  font-size: 1.5rem;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* ================================= End Navbar ================================= */
+
+/* ================================= Start Search ================================= */
+.search {
+  background-image: url(../img/banner.png);
+}
+.search .container {
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.search .container .search-box {
+  width: 90%;
+  position: relative;
+}
+.search .container .search-box button {
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+/* ================================= End Search ================================= */
+
+/* ================================= Start weather ================================= */
+.weather-box {
+  background-color: #1e202b;
+  padding: 0.5rem;
+}
+.weather-box .container {
+  transform: translateY(-30%);
+  -webkit-transform: translateY(-30%);
+  -moz-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  -o-transform: translateY(-30%);
+}
+
+.weather-box .container .box {
+  background-color: #323544;
+  color: white;
+  height: 400px;
+}
+.weather-box .container .row :nth-child(2) .box {
+  background-color: #272a38;
+}
+.weather-box .container .row :nth-child(2) .box .hearder {
+  background-color: #262936;
+}
+.weather-box .container .box .hearder {
+  background-color: #2d303d;
+  padding: 0 .5rem;
+}
+.weather-box .container .box .temperature h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .weather-box .container {
+    transform: translateY(-10%);
+    -webkit-transform: translateY(-10%);
+    -moz-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
+    -o-transform: translateY(-10%);
+  }
+
+  .search .container .search-box {
+    width: 100%;
+  }
+}
+/* ================================= End weather ================================= */
+/* ================================= Start footer ================================= */
+.footer {
+  background-color: #262936;
+}
+.footer .icon {
+  color: #009ad8;
+  background: #1e202b;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.footer .icon:hover {
+  background: #009ad8;
+  color: white;
+}
+/* ================================= End footer ================================= */
